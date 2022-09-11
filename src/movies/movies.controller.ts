@@ -9,7 +9,7 @@ export class MoviesController {
   constructor(private readonly moviesService: MoviesService) {}
 
   @Get()
-  getAll() {
+  getAll(): Movie[] {
     return this.moviesService.getAll()
   }
 

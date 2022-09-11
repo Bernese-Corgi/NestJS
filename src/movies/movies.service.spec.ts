@@ -32,6 +32,7 @@ describe('MoviesService', () => {
       it('should return a movie', () => {
         service.create({
           title: 'Test Movie',
+          director: 'test director',
           genres: ['test'],
           year: 2000,
         })
@@ -56,6 +57,7 @@ describe('MoviesService', () => {
     it('deletes a movie', () => {
       service.create({
         title: 'Test Movie',
+        director: 'test director',
         genres: ['test'],
         year: 2000,
       })
@@ -83,6 +85,7 @@ describe('MoviesService', () => {
 
       service.create({
         title: 'Test Movie',
+        director: 'test director',
         genres: ['test'],
         year: 2000,
       })
@@ -97,6 +100,7 @@ describe('MoviesService', () => {
     it('should update a movie', () => {
       service.create({
         title: 'Test Movie',
+        director: 'test director',
         genres: ['test'],
         year: 2000,
       })
